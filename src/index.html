@@ -4,17 +4,522 @@
         <meta charset="utf-8">
         <title>Webpack App</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
     </head>
-  <!-- <link rel="icon" href="../src/assets/img/favicon.png" type="image/png"> -->
+  <!-- <link rel="stylesheet" href="./styles/style.css"> -->
   <body>
+    <header class="my-business">
+      <div class="container">
+        <div class="my-business__wrap">
+          <div class="wrap-yellow d-flex">
+            <div class="my-business__date">
+              <p class="date__start text-center">09/10</p>
+            </div>
+            <p class="date__text uppercase text-center">старт курса</p>
+          </div>
+          <div class="my-business__about">
+            <div class="about-wrap">
+              <span class="about__span text-upper">Прикладной курс</span>
+              <h1 class="about__title">Как открыть свое дело.</h1>
+              <p class="about__text">
+                Прикладной курс “Как открыть свое дело” - это возможность дополнить
+                жизненный опыт практичными знаниями для развития собственного
+                бизнеса. Инвестируя в себя сейчас, вы сэкономите в будущем,
+                принимая верные решения.
+              </p>
+            </div>
+          </div>
+          <div class="my-business__advantages">
+            <div class="advantages__format main-wrap d-flex">
+              <img src="./assets/img/icon.svg" alt="Format of education">
+              <div class="advantages__wrap wrap">
+                <p class="advantages__title title text-upper">формат обучения</p>
+                <span class="advantages__text text">очно и онлайн</span>
+              </div>
+            </div>
+            <!-- ----- -->
+            <div class="advantages__video main-wrap d-flex">
+              <img src="./assets/img/camera.svg" alt="Video of education">
+              <div class="advantages__wrap wrap d-flex">
+                <p class="advantages__title title text-upper">видеозапись</p>
+                <span class="advantages__text text">все занятия доступны на видеозаписях</span>
+              </div>
+            </div>
+          </div>
+          <div class="header__burger">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- *********** -->
+    <section class="schedule">
+      <div class="schedule__wrap d-flex align-center">
+        <div class="schedule__wrap-title d-flex">
+          <h2 class="schedule__title text-center">Расписание занятий:</h2>
+        </div>
+        <!--  -->
+        <div class="schedule__text d-flex">
+          <div class="schedule__monday schedule__day d-flex">
+            <p class="monday__text day text-upper">пн</p>
+            <div class="monday__wrap day__wrap">
+              <span class="monday__morning day__morning">
+                12:30
+                <i class="fa fa-sun-o" aria-hidden="true"></i>
+              </span>
+              <span class="monday__evening day__evening">
+                18:00
+                <i class="fas fa-moon"></i>
+              </span>
+            </div>
+          </div>
+          <div class="schedule__wednesday schedule__day d-flex">
+            <p class="wednesday__text day text-upper">ср</p>
+            <div class="wednesday__wrap day__wrap">
+              <span class="wednesday__morning day__morning">12:30</span>
+              <i class="fa fa-sun-o" aria-hidden="true"></i>
+              <span class="wednesday__evening day__evening">18:00</span>
+              <i class="fas fa-moon"></i>
+            </div>
+          </div>
+        </div>
+        <div class="question">
+          <div class="question__wrapper d-flex">
+            <p class="question__text">
+              Занятия курса проходят в утренних и
+              вечерних группах, два раза в день.
+              Вы можете сами выбирать удобное для
+              учебы время.
+            </p>
+            <button class="question__btn" type="button">?</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  <!-- ----------------------- -->
+  <!-- progression accordion****************** -->
+    <main class="progression">
+      <div class="progression__wrapper d-flex accordion">
+        <div class="progression__icon-wrap accordion__wrap d-flex">
+          <div class="progression__img accordion__img"></div>
+        </div>
+        <div class="progression__title accordion__title">
+          <span>1.</span>
+          <h2 class=" text-upper">поиск идеи</h2>
+        </div>
+        <p class="progression__text accordion__text">
+          Eu eros sodales, malesuada tellus id, iaculis diam.
+          Vestibulum sodales, felis quis pharetra ultrices, lectus
+          ex laoreet felis
+        </p>
+        <p class="progression__details accordion__details">подробнее о блоке</p>
+      </div>
+      <div class="details">
+        <div class="details__wrap">
+          <div class="details__text text-one">
+            <p class="text__title text-upper">2.1 architecto beatae vitae </p>
+            <span class="text__span">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </span>
+          </div>
+          <div class="details__text text-two">
+            <p class="text__title text-upper">2.2 sit amet</p>
+            <span class="text__span">
+              Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+              sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+            </span>
+          </div>
+          <div class="details__text text-three">
+            <p class="text__title text-upper">2.3 Quis autem</p>
+            <span class="text__span">
+              Ut enim ad minima veniam, quis nostrum exercitationem
+              ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
+              Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil
+              molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+            </span>
+          </div>
+          <div class="details__text text-four">
+            <p class="text__title text-upper">2.4 voluptas nulla pariatur</p>
+            <span class="text__span">
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </span>
+          </div>
+        </div>
+      </div>
 
-    <div class="container">
-      <h1 class="title">Hello Webpack</h1>
-    </div>
 
-    <div class="box"></div>
+      <!-- ------------------------------------ -->
+      <div class="start__wrapper d-flex accordion">
+        <div class="start__icon-wrap accordion__wrap">
+          <div class="start__img accordion__img"></div>
+        </div>
+        <div class="start__title accordion__title">
+          <span>2.</span>
+          <h2 class=" text-upper">старт бизнеса</h2>
+        </div>
+        <p class="start__text accordion__text">
+          Malesuada tellus id, iaculis diam. Vestibulum sodales,
+          felis quis pharetra ultrices, lectusex laoreet felis, vel
+          condimentum nisi nulla et odio
+        </p>
+        <p class="start__details accordion__details">подробнее о блоке</p>
+      </div>
+      <div class="details">
+        <div class="details__wrap">
+          <div class="details__text text-one">
+            <p class="text__title text-upper">2.1 architecto beatae vitae </p>
+            <span class="text__span">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </span>
+          </div>
+          <div class="details__text text-two">
+            <p class="text__title text-upper">2.2 sit amet</p>
+            <span class="text__span">
+              Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+              sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+            </span>
+          </div>
+          <div class="details__text text-three">
+            <p class="text__title text-upper">2.3 Quis autem</p>
+            <span class="text__span">
+              Ut enim ad minima veniam, quis nostrum exercitationem
+              ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
+              Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil
+              molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+            </span>
+          </div>
+          <div class="details__text text-four">
+            <p class="text__title text-upper">2.4 voluptas nulla pariatur</p>
+            <span class="text__span">
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </span>
+          </div>
+        </div>
+      </div>
 
-    <hr>
-    <pre></pre>
+      <!-- ------------------------------------ -->
+      <div class="personal__wrapper d-flex accordion">
+        <div class="personal__icon-wrap accordion__wrap">
+          <div class="personal__img accordion__img"></div>
+        </div>
+        <div class="personal__title accordion__title">
+          <span>3.</span>
+          <h2 class=" text-upper">Персональный бренд</h2>
+        </div>
+        <p class="personal__text accordion__text">
+          Morbi eu eros sodales, malesuada tellus id, iaculis diam.
+          Vestibulum sodales, felis quis pharetra ultrices, lectus
+          ex laoreet felis, vel condimentum nisi nulla et odio.
+          Nullam ultrices porttitor justo.
+        </p>
+        <p class="personal__details accordion__details">подробнее о блоке</p>
+      </div>
+      <div class="details">
+        <div class="details__wrap">
+          <div class="details__text text-one">
+            <p class="text__title text-upper">2.1 architecto beatae vitae </p>
+            <span class="text__span">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </span>
+          </div>
+          <div class="details__text text-two">
+            <p class="text__title text-upper">2.2 sit amet</p>
+            <span class="text__span">
+              Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+              sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+            </span>
+          </div>
+          <div class="details__text text-three">
+            <p class="text__title text-upper">2.3 Quis autem</p>
+            <span class="text__span">
+              Ut enim ad minima veniam, quis nostrum exercitationem
+              ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
+              Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil
+              molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+            </span>
+          </div>
+          <div class="details__text text-four">
+            <p class="text__title text-upper">2.4 voluptas nulla pariatur</p>
+            <span class="text__span">
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ------------------------------------ -->
+      <div class="art__wrapper d-flex accordion">
+        <div class="art__icon-wrap accordion__wrap">
+          <div class="art__img accordion__img"></div>
+        </div>
+        <div class="art__title accordion__title">
+          <span>4.</span>
+          <h2 class=" text-upper">Искусство интуитивной фотографии</h2>
+        </div>
+        <p class="art__text accordion__text">
+          Morbi eu eros sodales, malesuada tellus id, iaculis diam.
+          Vestibulum sodales, felis quis pharetra ultrices, lectus
+          ex laoreet felis, vel condimentum nisi nulla et odio.
+          Nullam ultrices porttitor justo.
+        </p>
+        <p class="art__details accordion__details">подробнее о блоке</p>
+      </div>
+      <div class="details">
+        <div class="details__wrap">
+          <div class="details__text text-one">
+            <p class="text__title text-upper">2.1 architecto beatae vitae </p>
+            <span class="text__span">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </span>
+          </div>
+          <div class="details__text text-two">
+            <p class="text__title text-upper">2.2 sit amet</p>
+            <span class="text__span">
+              Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+              sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+            </span>
+          </div>
+          <div class="details__text text-three">
+            <p class="text__title text-upper">2.3 Quis autem</p>
+            <span class="text__span">
+              Ut enim ad minima veniam, quis nostrum exercitationem
+              ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
+              Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil
+              molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+            </span>
+          </div>
+          <div class="details__text text-four">
+            <p class="text__title text-upper">2.4 voluptas nulla pariatur</p>
+            <span class="text__span">
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </span>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- ------------------------------------ -->
+      <div class="technology__wrapper d-flex accordion">
+        <div class="technology__icon-wrap accordion__wrap">
+          <div class="technology__img accordion__img"></div>
+        </div>
+        <div class="technology__title accordion__title">
+          <span>5.</span>
+          <h2 class=" text-upper">Технологии маркетинга</h2>
+        </div>
+        <p class="technology__text accordion__text">
+          Morbi eu eros sodales, malesuada tellus id, iaculis diam.
+          Vestibulum sodales, felis quis pharetra ultrices, lectus
+          ex laoreet felis, vel condimentum nisi nulla et odio.
+          Nullam ultrices porttitor justo.
+        </p>
+        <p class="technology__details accordion__details">подробнее о блоке</p>
+      </div>
+      <div class="details">
+        <div class="details__wrap">
+          <div class="details__text text-one">
+            <p class="text__title text-upper">2.1 architecto beatae vitae </p>
+            <span class="text__span">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </span>
+          </div>
+          <div class="details__text text-two">
+            <p class="text__title text-upper">2.2 sit amet</p>
+            <span class="text__span">
+              Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+              sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+            </span>
+          </div>
+          <div class="details__text text-three">
+            <p class="text__title text-upper">2.3 Quis autem</p>
+            <span class="text__span">
+              Ut enim ad minima veniam, quis nostrum exercitationem
+              ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
+              Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil
+              molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+            </span>
+          </div>
+          <div class="details__text text-four">
+            <p class="text__title text-upper">2.4 voluptas nulla pariatur</p>
+            <span class="text__span">
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </span>
+          </div>
+        </div>
+      </div>
+    </main>
+  <!-- ********************************** -->
+    <section class="table">
+      <div class="container">
+        <div class="table__wrapper">
+          <table class="table__main" id="table">
+            <th>
+              <td>85 часов</td>
+              <td>1. поиск идеи</td>
+            </th>
+            <tr>
+              <td>04.09 - 06.09</td>
+              <td>Ut enim ad minima veniam</td>
+            </tr>
+            <tr>
+              <td>06.09 - 08.09</td>
+              <td>Quis nostrum</td>
+            </tr>
+            <tr>
+              <td>11.09 - 13.09</td>
+              <td>Exercitationem</td>
+            </tr>
+            <th>
+              <td>100 часов</td>
+              <td>2. старт бизнеса</td>
+            </th>
+            <tr>
+              <td>02.10 - 06.10</td>
+              <td>Ullam corporis suscipit</td>
+            </tr>
+            <tr>
+              <td>09.10 - 03.11</td>
+              <td>Laboriosam</td>
+            </tr>
+            <tr>
+              <td>06.11 - 19.11</td>
+              <td>Weekend</td>
+            </tr>
+          </table>
+          <!--  ------>
+          <p class="table__details">Подробное расписание</p>
+        </div>
+      </div>
+    </section>
+    <!-- ******************** -->
+    <section class="format">
+      <div class="container">
+        <div class="format__wrap">
+          <div class="format__full">
+            <img src="" alt="" class="full__img">
+            <div class="full__circle"></div>
+            <span class="full__span">очно</span>
+          </div>
+          <div class="format__dots">
+            .......................
+          </div>
+          <div class="format__online">
+            <img src="" alt="" class="online__img">
+            <div class="online__circle"></div>
+            <span class="online__span">заочно</span>
+          </div>
+        </div>
+        <p class="format__text">
+          Очные студенты присутствуют на лекциях в аудитории, а онлайн-студенты смотрят прямую
+          трансляцию из любого места с доступом в Интернет. Онлайн обучение равноценно очному
+          и отличается только форматом присутствия на лекциях.
+        </p>
+      </div>
+    </section>
+    <!-- SLIDER ************************** -->
+    <section class="slider">
+      <div class="slider__wrapper">
+        <div class="slider__item">
+          <img src="./assets/img/alexey.svg" alt="alexey" class="item__photo">
+          <div class="item__wrapper">
+            <p class="item__name">alexey cherednichenko</p>
+            <span class="item__position">head admin</span>
+            <p class="item__text">
+              At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+              voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati
+              cupiditate non provident, similique sunt in culpa qui officia deserunt.
+            </p>
+          </div>
+        </div>
+        <div class="slider__item">
+          <img src="./assets/img/alexey.svg" alt="alexey" class="item__photo">
+          <div class="item__wrapper">
+            <p class="p item__name">alexey cherednichenko</p>
+            <span class="item__position">head admin</span>
+            <p class="item__text">
+              At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+              voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati
+              cupiditate non provident, similique sunt in culpa qui officia deserunt.
+            </p>
+          </div>
+        </div>
+        <div class="slider__item">
+          <img src="./assets/img/alexey.svg" alt="alexey" class="item__photo">
+          <div class="item__wrapper">
+            <p class="p item__name">alexey cherednichenko</p>
+            <span class="item__position">head admin</span>
+            <p class="item__text">
+              At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+              voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati
+              cupiditate non provident, similique sunt in culpa qui officia deserunt.
+            </p>
+          </div>
+        </div>
+        <div class="slider__item">
+          <!-- <div style="height: 250px; background: coral;">4</div> -->
+        </div>
+      </div>
+      <div class="slider__pagination">
+        <div class="pagination__wrap">
+          <div class="pagination__items">
+            <span class="pagination__current"></span>/<span></span>
+          </div>
+          <div class="pagination__arrows">
+            <a class="slider__control slider__control_left" href="#" role="button"></a>
+            <a class="slider__control slider__control_right slider__control_show" href="#" role="button"></a>
+          </div>
+        </div>
+      </div>
+      <p class="slider__text">section name</p>
+    </section>
+    <!-- **************************** -->
+    <footer>
+      <div class="container">
+        <div class="footer__wrap">
+          <div class="footer__contacts">
+            <h3 class="contacts__title">контакты</h3>
+            <p class="contacts__text">Харьков, Отакара Яроша 18, БЦ «Солярис», 4й этаж</p>
+            <div class="contacts__relation">
+              <a href="tel:0999729999" class="contacts__tel">099-972-99-99</a>
+              <a href="mail:INFO@ican.business" class="contacts__mail">INFO@ican.business</a>
+              <a href="" class="contacts__telegram">telegram link</a>
+            </div>
+          </div>
+          <!-- google MAP ************************* -->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1077.689162552524!2d36.218040331377686!3d50.02651227182592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a1269bbc8da9%3A0x726743e7e2246d52!2zM0RNQVlBLiDQmtGD0YDRgSAzZC3Qs9GA0LDRhNC40LrQuCwg0LDQvdC40LzQsNGG0LjQuCDQuCBWRlg!5e0!3m2!1sru!2sua!4v1596174427672!5m2!1sru!2sua"
+            width="600" height="450" frameborder="0" style="border:0;" aria-hidden="false" tabindex="0">
+          </iframe>
+          <div class="footer__form">
+            <div class="footer__icon-lock">
+              <img src="./assets/img/lock_.svg" alt="lock">
+              <div class="footer__circle"></div>
+            </div>
+            <form action="" id="form">
+              <label for="" class="form__name-title"></label>
+              <input type="text" class="form__name">
+              <label for="" class="form__email-title"></label>
+              <input type="text" class="form__email">
+              <label for="" class="form__tel-title"></label>
+              <input type="text" class="form__tel">
+              <label for="" class="form__format"></label>
+              <input type="checkbox" class="form__online" placeholder="онлайн">
+              <input type="checkbox" class="form__full" placeholder="очно">
+              <button type="submit">регистрация</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

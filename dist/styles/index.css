@@ -1,0 +1,226 @@
+img, button, input {
+    display: block;
+  }
+
+  .container {
+    margin: 0 auto;
+    max-width: 1720px;
+  }
+
+  .text-upper {
+    text-transform: uppercase;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  .d-flex {
+    display: flex;
+  }
+
+  html {
+    font-size: 16px;
+  }
+  html body {
+    font-size: inherit;
+  }
+  html header {
+    position: relative;
+  }
+  html header .header__burger i {
+    font-size: 1.5em;
+    color: #000000;
+  }
+  html .my-business {
+    position: relative;
+  }
+  html .my-business::after {
+    content: "";
+    background: #ffffff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 9.37rem;
+  }
+  html .my-business .my-business__wrap .wrap-yellow {
+    justify-content: center;
+    flex-direction: column;
+    background: #ffe409;
+  }
+  html .my-business .my-business__wrap .wrap-yellow .my-business__date {
+    width: 10rem;
+    height: 9.68rem;
+    border: 8px solid #000000;
+  }
+  html .my-business .my-business__wrap .wrap-yellow .my-business__date .date__start {
+    font: bold 2em "Gotham Pro", sans-serif;
+    text-align: center;
+  }
+  html .my-business .my-business__wrap .wrap-yellow .date__text {
+    font: bold 0.875em "Gotham Pro Narrow", sans-serif;
+    text-align: center;
+  }
+  @media screen and (min-width: 1100px) {
+    html .my-business .my-business__wrap .my-business__about .about-wrap {
+      margin-right: 8.43rem;
+    }
+  }
+  html .my-business .my-business__wrap .my-business__about .about-wrap .about__span {
+    color: #afafaf;
+    font: bold 0.875em "Gotham Pro Narrow", sans-serif;
+  }
+  html .my-business .my-business__wrap .my-business__about .about-wrap .about__title {
+    font: bold 2.18em "Gotham Pro Narrow", sans-serif;
+  }
+  @media screen and (min-width: 1100px) {
+    html .my-business .my-business__wrap .my-business__about .about-wrap .about__title {
+      width: 15rem;
+      margin: 1.1rem auto 4.37rem;
+    }
+  }
+  html .my-business .my-business__wrap .my-business__about .about-wrap .about__text {
+    color: #636363;
+    font-size: 0.875em;
+  }
+  @media screen and (min-width: 1100px) {
+    html .my-business .my-business__wrap .my-business__about .about-wrap .about__text {
+      width: 37.8rem;
+    }
+  }
+  html .my-business .my-business__wrap .my-business__advantages .main-wrap {
+    justify-content: center;
+    align-items: center;
+  }
+  @media screen and (min-width: 1100px) {
+    html .my-business .my-business__wrap .my-business__advantages .main-wrap .wrap {
+      width: 200px;
+    }
+  }
+  html .my-business .my-business__wrap .my-business__advantages .main-wrap .wrap .title {
+    font: bold 0.875em "Gotham Pro Narrow", sans-serif;
+  }
+  html .my-business .my-business__wrap .my-business__advantages .main-wrap .wrap .text {
+    color: #636363;
+    font: bold 0.875em "Gotham Pro Narrow", sans-serif;
+  }
+  @media screen and (min-width: 1100px) {
+    html .my-business .my-business__wrap .my-business__advantages .advantages__video .advantages__wrap {
+      width: 195px;
+    }
+  }
+  html .my-business .schedule {
+    background: #f6f6f6;
+  }
+  @media screen and (min-width: 1100px) {
+    html .my-business .schedule {
+      height: 20rem;
+    }
+  }
+  html .my-business .schedule .schedule__wrap {
+    justify-content: center;
+  }
+  html .my-business .schedule .schedule__wrap .schedule__wrap-title {
+    background: #ffffff;
+    width: 28.75rem;
+    justify-content: center;
+    align-items: center;
+  }
+  html .my-business .schedule .schedule__wrap .schedule__wrap-title .schedule__title {
+    font: bold 2.18em "Gotham Pro Narrow", sans-serif;
+  }
+  @media screen and (min-width: 1100px) {
+    html .my-business .schedule .schedule__wrap .schedule__wrap-title .schedule__title {
+      width: 14.7rem;
+    }
+  }
+  html .my-business .schedule .schedule__wrap .schedule__text {
+    justify-content: center;
+    align-items: center;
+  }
+  html .my-business .schedule .schedule__wrap .schedule__text .schedule__day {
+    justify-content: center;
+    align-items: center;
+  }
+  @media screen and (min-width: 1100px) {
+    html .my-business .schedule .schedule__wrap .schedule__text .schedule__day {
+      height: 4.81rem;
+      width: 14.06rem;
+    }
+  }
+  html .my-business .schedule .schedule__wrap .schedule__text .schedule__day .day {
+    font: bold 2.18em "Gotham Pro Narrow", sans-serif;
+    color: #000000;
+  }
+  html .my-business .schedule .schedule__wrap .schedule__text .schedule__day .day__wrap .day__morning {
+    color: #afafaf;
+    font: bold 0.875em "Gotham Pro Narrow", sans-serif;
+  }
+  html .my-business .schedule .schedule__wrap .schedule__text .schedule__day .day__wrap .day__morning i {
+    font-size: 0.875em;
+  }
+  html .my-business .schedule .schedule__wrap .schedule__text .schedule__day .day__wrap .day__evening {
+    color: #afafaf;
+    font: bold 0.875em "Gotham Pro Narrow", sans-serif;
+  }
+  html .my-business .schedule .schedule__wrap .schedule__text .schedule__day .day__wrap .day__evening i {
+    font-size: 0.875em;
+  }
+  html .my-business .schedule .schedule__wrap .question .question__wrapper {
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    border: 1px solid #c6c6c6;
+  }
+  @media screen and (min-width: 1100px) {
+    html .my-business .schedule .schedule__wrap .question .question__wrapper {
+      height: 9.68rem;
+      width: 24.3rem;
+    }
+  }
+  html .my-business .schedule .schedule__wrap .question .question__wrapper .question__text {
+    color: #afafaf;
+    font: bold 0.875em "Gotham Pro Narrow", sans-serif;
+  }
+  @media screen and (min-width: 1100px) {
+    html .my-business .schedule .schedule__wrap .question .question__wrapper .question__text {
+      width: 20.3rem;
+    }
+  }
+  html .my-business .schedule .schedule__wrap .question .question__wrapper .question__btn {
+    font-size: 1.25em;
+    color: #e94a4a;
+    border: 3px solid #e94a4a;
+    border-radius: 50%;
+    text-align: center;
+  }
+  @media screen and (min-width: 1100px) {
+    html .my-business .schedule .schedule__wrap .question .question__wrapper .question__btn {
+      width: 2.06rem;
+      height: 2.06rem;
+    }
+  }
+  html .progression .accordion {
+    width: 100%;
+    border: 1px 0 1px solid #e5e5e5;
+  }
+  @media screen and (min-width: 1100px) {
+    html .progression .accordion {
+      height: 10rem;
+    }
+  }
+  html .progression .accordion .accordion__wrap {
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  @media screen and (min-width: 1100px) {
+    html .progression .accordion .accordion__wrap {
+      width: 10rem;
+    }
+  }
+  html .progression .accordion .accordion__wrap .accordion__img {
+    background: url("../assets/img/search.svg") no-repeat center top;
+    width: 100%;
+  }

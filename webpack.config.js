@@ -5,7 +5,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const OptimizeCssAssetWebpackPlugin = require('optimize-css-assets-webpack-plugin')
 const TerserWebpackPlugin = require('terser-webpack-plugin')
-// const {BundleAnalyzerPlugin} = require('webpack-bundle-analyzer')
+const favicon = require('serve-favicon')
 
 const isDev = process.env.NODE_ENV === 'development'
 console.log('is dev', isDev)
@@ -38,7 +38,19 @@ const cssLoaders = extra => {
         reloadAll:  true
       }
     },
-    'css-loader'
+    {
+      loader: 'css-loader'
+    },
+    {
+      loader: 'postcss-loader',
+      options: {
+        ident: 'postcss',
+        plugins: [
+          require('tailwindcss'),
+          require('autoprefixer'),
+        ],
+      },
+    },
   ]
   if (extra) {
     loaders.push(extra)
@@ -47,37 +59,20 @@ const cssLoaders = extra => {
   return loaders
 }
 
-// const jsLoaders = () => {
-//   const loaders = [{
-//     loader: 'babel-loader',
-//     // options: babelOptions()
-//   }]
-
-//   if(isDev) {
-//     loaders.push('eslint-loader')
-//   }
-
-//   return loaders
-// }
-
 const plugins = () => {
   const base = [
     new HtmlWebpackPlugin({
       template: './index.html',
       minify: {
         collapseWhitespace: isProd
-      }
+      },
+      favicon: "assets/img/favicon.svg"
     }),
     new CleanWebpackPlugin(),
     new CopyWebpackPlugin({
       patterns: [
-          { from: './assets/img/favicon.png', to: '../dist/img' },
-          { from: './styles/style.css', to: '../dist/styles' },
-
-          { from: './styles/style.css', to: '../dist/styles' },
-          { from: './styles/style.css', to: '../dist/styles' },
-          { from: './styles/style.css', to: '../dist/styles' },
-          { from: './styles/style.css', to: '../dist/styles' },
+          { from: './assets/img/', to: '../dist/img' },
+          { from: './styles/', to: '../dist/styles' },
 
       ]
     }),
@@ -103,10 +98,10 @@ module.exports = {
     path: path.resolve(__dirname, 'dist')
   },
   resolve: {
-    extensions: ['.js', '.json', '.png', '.scss', '.css', '.sass'],
+    extensions: ['.js', '.json', '.png', '.scss', '.css', '.sass', '.svg', '.jpg'],
     alias: {
        "@": path.resolve(__dirname, 'src'),
-       "@asts": path.resolve(__dirname, './src/assets')
+       "@img": path.resolve(__dirname, '../assets/img/')
     }
   },
   optimization: optimization(),
@@ -133,20 +128,7 @@ module.exports = {
       {
         test: /\.ttf|woff|woff2|eot$/,
         use: ['file-loader']
-      },
-      {
-        test: /\.pug$/,
-        use: ['pug-html-loader']
-      },
-      {
-        test: /\.xml$/,
-        use: ['xml-loader']
-      },
-    //   {
-    //     test: /\.js$/,
-    //     exclude: /node_modules/,
-    //     use: jsLoaders()
-    //   },
+      }
     ]
   }
 }
